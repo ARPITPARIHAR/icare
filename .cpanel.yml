@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/oswxw85upmow/public_html/
+    - /bin/cp -r * $DEPLOYPATH
