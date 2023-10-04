@@ -1,4 +1,4 @@
-
+<br>
   <div class="services-area section-padding30 fix" style="height: 1840px;" >
     <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.3s">
       <div class="container">
@@ -14,33 +14,34 @@
           </div>
           <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-6" >
-                <div class="services-wrapper mb-50"style="border-radius:15px;height:450px;">
+                <div class="services-wrapper mb-50"style="border-radius:15px;height:400px;">
                     <div class="single-services">
                         <div class="services-icon">
                             <!-- You can use an icon related to mobile repair here -->
                             <span class="flaticon-mobile"></span>
                         </div>
                         <div class="services-cap" style="color: #9d0c0cfa;">
-                            <h3 style="color:#188729d9;font-family:Georgia, 'Times New Roman', Times, serif;font-size:30px;">Screen Repair</a></h3>
+                            <h3 style="color:#188729d9;font-family:Georgia, 'Times New Roman', Times, serif;font-size:30px;margin-top:-80px;">Screen Repair</a></h3>
                             <p style="color:#62086efc; font-size:20px">We specialize in fixing cracked screens and display issues for all types of mobile devices.</p>
                             {{-- <a href="services.html" class="get-btn"><i class="ti-arrow-right"></i> Learn More</a> --}}
                         </div>
                     </div>
                     <div class="services-shape">
                         <span>.01</span>
-                        <img src="assets/img/gallery/shape-services.png" alt="">
+                        <img src="assets/img/gallery/shape-services.png" alt="" >
+
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="services-wrapper mb-50"style="border-radius:15px;height:500px;">
+                <div class="services-wrapper mb-50"style="border-radius:15px;height:440px;">
                     <div class="single-services">
                         <div class="services-icon">
                             <!-- You can use an icon related to mobile repair here -->
                             <span class="flaticon-mobile"></span>
                         </div>
                         <div class="services-cap">
-                            <h3 style="color:#cd1212;font-family:Georgia, 'Times New Roman', Times, serif;font-size:30px;">Battery Replacement</a></h3>
+                            <h3 style="color:#cd1212;font-family:Georgia, 'Times New Roman', Times, serif;font-size:30px;margin-top:-80px;">Battery Replacement</a></h3>
                             <p style="color:#057685fc; font-size:20px">If your mobile device's battery is not holding a charge, we can replace it with a new one.</p>
                             {{-- <a href="services.html" class="get-btn"><i class="ti-arrow-right"></i> Learn More</a> --}}
                         </div>
@@ -52,21 +53,21 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="services-wrapper mb-50"style="border-radius:15px;height:550px;">
+                <div class="services-wrapper mb-50"style="border-radius:15px;height:480px;">
                     <div class="single-services">
                         <div class="services-icon">
                             <!-- You can use an icon related to mobile repair here -->
                             <span class="flaticon-mobile"></span>
                         </div>
                         <div class="services-cap">
-                            <h3 style="color:#7b0e6f;font-family:Georgia, 'Times New Roman', Times, serif;font-size:30px;">Software Troubleshooting</a></h3>
+                            <h3 style="color:#7b0e6f;font-family:Georgia, 'Times New Roman', Times, serif;font-size:30px;margin-top:-80px;">Software Troubleshooting</a></h3>
                             <p style="color:#e5b013fc; font-size:20px">We can help you resolve software issues and optimize the performance of your mobile device.</p>
                             {{-- <a href="services.html" class="get-btn"><i class="ti-arrow-right"></i> Learn More</a> --}}
                         </div>
                     </div>
                     <div class="services-shape">
                         <span>.03</span>
-                        <img src="assets/img/gallery/shape-services.png"style="margin-top:60px"; alt="">
+                        <img src="assets/img/gallery/shape-services.png"style="margin-top:50px"; alt="">
                     </div>
                 </div>
             </div>
@@ -456,6 +457,7 @@
 <br>
 
     <style>
+        
       .services-cap:hover{
             transform: scale(1.15);
         transition: transform 0.2;
@@ -627,13 +629,32 @@
         transform: translateX(calc(-230px * 5 - 2px * 4)); /* Adjust the total width */
     }
 }
+@media (max-width: 767px) {
+    .services-wrapper {
+        max-width: none; /* Remove the maximum width for mobile screens */
+        margin: 0; /* Reset margin */
+        height: auto; /* Allow the height to adjust as needed */
+    }
 
+    .services-wrapper h3 {
+        font-size: 24px; /* Reduce the font size for headings on mobile */
+        margin-top: -20px; /* Adjust spacing for headings */
+    }
+
+    .services-wrapper p {
+        font-size: 18px; /* Reduce the font size for paragraphs on mobile */
+    }
+
+    .services-shape {
+        display: none; /* Hide the shape image on mobile screens */
+    }
+}
     
     </style>
     
     <section class="section services-section" style="margin-top: -360px;">
-        <div class="text-center container">
-            <h1 class="font-500" style="color:#c73f69;font-family:Verdana, Geneva, Tahoma, sans-serif;">Why Choose Us</h1>
+        <div class="text-center container" style="background-color:yellow;border-radius:15px;" >
+            <h1 class="font-500"  style="color:#c73f69;font-family:Verdana, Geneva, Tahoma, sans-serif; ">Why Choose Us</h1>
             <p style="font-weight:bold">We provide quick service process at our mobile <a href="" style="color:black" target="blank">Store</a> <a href="https://phixman.com/stores.php" style="color:black" target="blank"></a> where we are fixing all models of smartphones. Our service included touch screen repair/replacement, liquid and water damage repair, broken and physical damage repair, mainboard chip-level repairing, charging port, power button, side button, camera repair, headphone jack, wifi, bluetooth, battery replacement, software troubleshoot and up-gradation.</p>
             <div class="dash-underline"></div>
             <p>&nbsp;</p>	
@@ -736,7 +757,7 @@
     font-family: 'Raleway-SemiBold';
     font-size: 28px;
     margin: 0 0 3px;
-    color:#b60808f7
+    color:darkblue;
 }
 
         </style> 

@@ -14,7 +14,7 @@
     color: #fff;
     text-align: center;
 
-    height:1000px!important;
+    height:auto!important;
     margin-top: 0px!important;
     margin-bottom: 0px!important;
 }
