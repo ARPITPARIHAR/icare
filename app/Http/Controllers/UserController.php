@@ -27,4 +27,10 @@ class UserController extends Controller
         return view('user.contact');
  
     }
+    public function service()
+    {
+         
+        return view('user.service');
+ 
+    }
 }

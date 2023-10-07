@@ -1,4 +1,4 @@
-<br>
+
   <div class="services-area section-padding30 fix" style="height: 1840px;" >
     <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.3s">
       <div class="container">
@@ -653,8 +653,8 @@
     </style>
     
     <section class="section services-section" style="margin-top: -360px;">
-        <div class="text-center container" style="background-color:yellow;border-radius:15px;" >
-            <h1 class="font-500"  style="color:#c73f69;font-family:Verdana, Geneva, Tahoma, sans-serif; ">Why Choose Us</h1>
+        <div class="text-center container" style="background-color:#5cd36e61;border-radius:25px;" >
+            <h1 class="font-500"  style="color:#141b9c;font-family:Verdana, Geneva, Tahoma, sans-serif; ">Why Choose Us</h1>
             <p style="font-weight:bold">We provide quick service process at our mobile <a href="" style="color:black" target="blank">Store</a> <a href="https://phixman.com/stores.php" style="color:black" target="blank"></a> where we are fixing all models of smartphones. Our service included touch screen repair/replacement, liquid and water damage repair, broken and physical damage repair, mainboard chip-level repairing, charging port, power button, side button, camera repair, headphone jack, wifi, bluetooth, battery replacement, software troubleshoot and up-gradation.</p>
             <div class="dash-underline"></div>
             <p>&nbsp;</p>	
