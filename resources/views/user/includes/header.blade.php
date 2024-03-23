@@ -1,5 +1,5 @@
 
-  <div class="services-area section-padding30 fix" style="height: 1840px;" >
+<div class="services-area section-padding30 fix" style="height: 1840px;" >
     <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.3s">
       <div class="container">
          
@@ -510,6 +510,58 @@
         .services-area::before{
         background-color:#a4c4be!important;
         }
+        
+        
+        
+        /* Responsive CSS for screens up to 767px (adjust as needed) */
+@media (max-width: 767px) {
+    .section-tittle {
+        margin-top: -20px !important; /* Set margin-top to 50px for mobile screens */
+    }
+    .services-section {
+        margin-top:-1325px !important; /* Set margin-top to 100px for mobile screens */
+    }
+  
+       .services-wrapper {
+        margin-bottom: 20px !important; /* Set margin-bottom to 20px for mobile screens */
+    }
+    .services-area {
+        height: 3500px!important; /* Set a different height for mobile screens, e.g., 1500px */
+    }
+    .brand-container {
+        background-size: 100% 580px !important; /* Adjust the height as needed for mobile screens */
+        height: 580px !important; 
+        margin-bottom: -8900px !important; }
+        
+        
+   .service-image {
+        width: 95% !important;
+        height: auto !important;
+       margin-left:50px!important;
+        border-radius: 50%; 
+    }
+    .service-image img {
+        width: 95% !important;
+        height: auto !important;
+        display: block!important;
+        margin-left:-20px!important;
+        object-position: center center !important;
+    }
+    
+     .service-image-container {
+        text-align: center; /* Center the content horizontally */
+    }
+
+    .service-image {
+        width: 95% !important;
+        height: auto !important;
+        display: inline-block; /* Make it inline-block to center it horizontally */
+        border-radius: 50%; /* Circular shape */
+    }
+    
+    }
+
+        
     </style>
 
 

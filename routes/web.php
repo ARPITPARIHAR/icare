@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\MessageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,3 +19,5 @@ Route::get('/', [UserController::class, 'home']);
 Route::get('about', [UserController::class, 'about']);
 Route::get('contact', [UserController::class, 'contact']);
 Route::get('services', [UserController::class, 'service']);
+
+Route::post('contact/store', [MessageController::class, 'store'])->name('contact.store');

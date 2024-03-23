@@ -19,7 +19,8 @@
           
             <div class="contact-container">
                   <h2 class="h2 text-center top-heading my-4">Drop Us A Quick Message</h2>
-                <form id="contact" action="" method="post">
+                <form id="contact" form action="{{ route('contact.store') }}" method="post">
+                         @csrf
                     <div class="row">
                         <div class="col-lg-6">
                          
@@ -39,7 +40,9 @@
                         </div>
                         <div class="col-lg-12">
                             <fieldset>
-                                <textarea name="message" name="message" type="text" class="form-control" id="message" placeholder="Message" required=""></textarea>
+                                <textarea name="message" type="text" class="form-control" id="message" placeholder="Message" required="" style="color: white; font-size: 20px;"></textarea>
+
+
                             </fieldset>
                         </div>
                         <br>
@@ -64,28 +67,28 @@
                 <div class="row">
                     <!-- Address Block -->
                     <div class="col-md-4"> <!-- Increase the width to col-md-6 for a wider block -->
-                        <div class="address-block">
-                            <div class="ad">Address</div>
+                        <div class="address-block" style="height:150px;">
+                            <div class="ad" style="margin-top:15px;">Address</div>
                           
-                            <p>i Care F1 1St floor, Bothra Complex Near Modern Market Bikaner  Rajasthan</p>
+                            <span style="color:white;">i Care F1 1St floor, Bothra Complex Near Modern Market Bikaner  Rajasthan</span>
                         </div>
                     </div>
             
                     <!-- Contact Number Block -->
                     <div class="col-md-4"> <!-- Increase the width to col-md-6 for a wider block -->
-                        <div class="contact-block">
-                            <div class="ad">Contact Number</div>
-                            <p>+1 514 648 256</p>
-                            <p>+1 123 456 789</p>
+                        <div class="contact-block" style="height:150px;">
+                            <div class="ad" style="margin-top:30px;" >Contact Number</div>
+                            <span style="color:white;">+1 514 648 256</span>
+                          
                         </div>
                     </div>
             
                    
                     <div class="col-md-4"> <!-- Increase the width to col-md-6 for a wider block -->
-                        <div class="email-block">
-                            <div class="ad">Email Address</div>
+                        <div class="email-block" style="height:150px;">
+                            <div class="ad"style="margin-top:15px;" >Email Address</div>
                            
-                            <p> service@icareindia.net</p>
+                            <span  style="color:white;"> service@icareindia.net</span>
                         </div>
                     </div>
                 </div>
@@ -96,98 +99,7 @@
     </div>
 </div>
 </div>
-<footer>
-    <!-- Footer Start-->
-    <footer class="footer-area">
-      <div class="container" style="margin-bottom:0px;" >
-          <div class="footer-top footer-padding">
-              <div class="row justify-content-between">
-                  <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
-                      <div class="single-footer-caption mb-50">
-                          <div class="single-footer-caption mb-30">
-                              <!-- logo -->
-                              <div class="footer-logo" style="background-color: white; width: 150px; height: 120px; border-radius: 15px;">
-                                  <a href="index.html"><img src="assets/img/logo/icare_logo.png" alt=""></a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  
-                  <div class="col-xl-4 col-lg-10 col-md-6 col-sm-8">
-                      <div class="single-footer-caption mb-10">
-                          <div class="footer-tittle" style="color:white; font-family:muli; font-size:20px!important;margin-left:-40px!important;">
-                              At iCare, we specialize in providing top-notch mobile repair and service solutions. With a team of skilled technicians and a commitment to excellence.. 
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-xl-2 col-lg-5 col-md-6 col-sm-8">
-                      <div class="single-footer-caption mb-50">
-                          <div class="footer-tittle">
-                              <h4 style="color: pink;">Quick Link </h4>
-                              <ul>
-                                  <li><a href="#">Contact Us</a></li>
-                                  <li><a href="#">About Us</a></li>
-                                  <li><a href="#">News & Articles</a></li>
-                                  <li><a href="#">Privacy Policy</a></li>
-                              </ul>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-xl-3 col-lg-6 col-md-6 col-sm-8">
-                      <div class="single-footer-caption mb-50">
-                          <div class="footer-tittle">
-                              <h4 style="color: pink; display: inline;">Call Us:</h4> 
-                              <span style="color: white;">+1 514 648 256</span>
-                              
-                              <ul><br>
-                                  
-                                  <li class="custom-text">
-                                      <h4 style="color: pink;display: inline; margin-left:30px!important; ">Mail Us:</h4> 
-                                      <span style="color: white;">service@icareindia.net</span>
-                                  </li>
-                              </ul>
-                              <p class="custom-text" style="margin-top: 5px;">
-                                  <h4 style="color: pink; margin: 0; display: inline;">Our Address:</h4> 
-                                  <span style="color: white; font-family:muli; margin: 0;">i Care F1 1St floor Bothra Complex Near Modern Market Bikaner Pin 334001 Rajasthan</span>
-                              </p>
-                              
-                          </div>
-                          
-                          
-                          
-                          
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="footer-bottom">
-              <div class="row d-flex justify-content-between align-items-center">
-                  <div class="col-xl-9 col-lg-9 ">
-                      <div class="footer-copy-right" >
-                          <p  style="color: #8ba4b1!important; font-size:16px!important; margin-left:-580px!important;">
-                           
-                              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart" aria-hidden="true"></i>
-                              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                          </p>
-                      </div>
-                  </div>
-                  <div class="col-xl-3 col-lg-3">
-                      <!-- Footer Social -->
-                      <div class="footer-social f-right">
-                          <a href="#"><i class="fab fa-facebook-f"></i></a>
-                          <a href="#"><i class="fab fa-twitter"></i></a>
-                          <a href="#"><i class="fas fa-globe"></i></a>
-                          <a href="#"><i class="fab fa-instagram"></i></a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </footer>
-  <!-- Scroll Up -->
-  <div id="back-top">
-      <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
-  </div>
+
   <style>
   /* Apply custom text style to text within .custom-text */
   .custom-text {
@@ -215,12 +127,12 @@
       margin-top: 10px !important; /* Adjust as needed */
   }
   
-  </style>
-<style>
+
+
    
 .ad{
     font-size: 30px;
-    color:white; 
+    color:#fbff2d; 
 }
 
     .address-block {
@@ -234,7 +146,7 @@
 
     /* Style for the contact number block */
     .contact-block {
-        background-color:coral;
+        background-color:#04847f;
         padding: 1px;
    
         border-radius: 15px;
@@ -266,23 +178,22 @@
     }
 
     /* Style for text within the blocks */
-    p {
+    /* p {
         margin: 5px 0;
         font-size: 18px;
     }
     .container {
     margin-bottom: 40px;
-}
+} */
 
 /* CSS for the footer */
 
 
-</style>
 
 
 
-<style>
-    
+
+
 /* Style for the icon */
 .icon {
     float: left; /* Icons on the left side */
@@ -305,21 +216,21 @@
     font-size: 20px; /* Adjust font size as needed */
     margin-left: 10px; /* Add some margin between icon and text */
 }
-p {
+/* p {
     font-family: "Muli",sans-serif;
     color: white !important;
     font-size:18px!important;
   
     margin-bottom: 15px;
     font-weight: normal;
-}
+} */
 
 
 
 
 form#contact input::placeholder,
 form#contact textarea::placeholder {
-    color: white;
+    color:rgb(208, 218, 104);
     font-size: 22px;
 }
 
@@ -386,7 +297,7 @@ form#contact input {
     background-color:#bddf11a6;
     border: none;
     outline: none;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 300;
     color:white;
     padding: 0px 20px;
@@ -450,7 +361,7 @@ form#contact button {
 
 </style>
 
-
+@include('user.includes.footer')
 @section('style')
     
 @endsection

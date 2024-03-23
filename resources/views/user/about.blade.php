@@ -3,6 +3,9 @@
 
 @include('user.includes.nav')
 
+<script>
+    new WOW().init();
+</script>
 
 
 
@@ -77,7 +80,9 @@ font-family: auto;
     </div>
 </div>
      
-    <div class="about-container">
+    <div class="about-container" >
+        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".7s" style=" visibility: visible; animation-delay: 0.7s; animation-name: fadeIn;">
+            <!-- Content goes here -->
         <h1>Our Story</h1>
         <div class="content">Founded in [Year], iCare has evolved into a leading mobile repair and service center in [Your Location]. What began as a humble repair shop has grown into a reputable establishment known for its unwavering commitment to excellence.</div>
 
@@ -99,7 +104,7 @@ font-family: auto;
         
             <div class="content">Thank you for choosing iCare – where your devices are in caring hands.</div>
     </div>
-
+</div>
 </div>
 </div>
 @include('user.includes.footer')
